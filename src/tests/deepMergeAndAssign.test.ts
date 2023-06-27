@@ -1,4 +1,6 @@
-import { deepUpdateAndAssign } from "../src"
+import { deepMergeAndAssign } from ".."
+
+// all test are in ./deepMerge.test.ts
 
 test('Mutable logic', () => {
   const a = {
@@ -8,7 +10,7 @@ test('Mutable logic', () => {
     a: 2
   }
 
-  deepUpdateAndAssign(a, b)
+  deepMergeAndAssign(a, b)
 
   expect(a.a).toBe(2)
 })

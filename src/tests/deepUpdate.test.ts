@@ -1,4 +1,4 @@
-import { deepUpdate } from "../src"
+import { deepUpdate } from ".."
 
 test('Update logic', () => {
   interface Person {

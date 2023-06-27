@@ -1,4 +1,4 @@
-import { deepMerge } from "../src"
+import { deepMerge } from ".."
 
 test('Merge logic: rewrite primitive with primitive', () => {
   interface Person {
