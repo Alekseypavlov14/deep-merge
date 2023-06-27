@@ -1,0 +1,19 @@
+{
+  "name": "@oleksii/deep-merge",
+  "version": "1.0.0",
+  "description": "Utility that merges objects",
+  "main": "./build/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": [
+    "utils",
+    "merge"
+  ],
+  "author": "Oleksii Pavlov <aleshapavlov9@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.1.3"
+  }
+}
