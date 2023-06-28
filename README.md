@@ -1,11 +1,11 @@
-# @oleksii/deep-merge
+# @oleksii-pavlov/deep-merge
 
 The utility that merges two objects deeply. Functions do not mutate object but return updated copy.
 Functions which names are ended up with **AndAssign** mutate first argument!
 
 ## Usage
 ---
-```
+```ts
 import { deepMerge } from '@oleksii/deep-merge'
 
 interface UserWithFirstName {
@@ -43,7 +43,7 @@ You can see that result type is different comparing to arguments. **You need to 
 
 #### **deepMerge** - for merging with type changing without mutating
 Example:
-```
+```ts
 import { deepMerge } from '@oleksii/deep-merge'
 
 interface UserWithFirstName {
@@ -72,7 +72,7 @@ const user = deepMerge<User>(userWithFirstName, userWithLastName)
 #### **deepUpdate** - for updating values without type changing without mutating
 
 Example:
-```
+```ts
 import { deepUpdate } from '@oleksii/deep-merge'
 
 interface User {
@@ -98,7 +98,7 @@ const updatedUser = deepUpdate(user, updatedUserData)
 
 #### **deepMergeAndAssign** - for merging with type changing with mutating
 Example:
-```
+```ts
 import { deepMergeAndAssign } from '@oleksii/deep-merge'
 
 interface UserWithFirstName {
@@ -126,7 +126,7 @@ deepMergeAndAssign<User>(userWithFirstName, userWithLastName)
 #### **deepUpdateAndAssign** - for updating values without type changing with mutating
 
 Example:
-```
+```ts
 import { deepUpdateAndAssign } from '@oleksii/deep-merge'
 
 interface User {
