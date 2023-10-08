@@ -1,6 +1,6 @@
 {
   "name": "@oleksii-pavlov/deep-merge",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Utility that merges objects",
   "main": "./build/index.js",
   "scripts": {
