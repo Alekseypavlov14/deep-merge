@@ -52,5 +52,6 @@ export {
   deepMerge,
   deepMergeAndAssign,
   deepUpdate,
-  deepUpdateAndAssign
+  deepUpdateAndAssign,
+  Assignable
 }
