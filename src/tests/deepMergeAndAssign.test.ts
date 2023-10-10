@@ -1,4 +1,4 @@
-import { deepMergeAndAssign } from ".."
+import { deepMergeAndAssign } from "../utils/deepMergeAndAssign"
 
 // all test are in ./deepMerge.test.ts
 

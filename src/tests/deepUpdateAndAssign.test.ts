@@ -1,4 +1,4 @@
-import { deepUpdateAndAssign } from ".."
+import { deepUpdateAndAssign } from "../utils/deepUpdateAndAssign"
 
 test('Mutable logic', () => {
   const a = {
