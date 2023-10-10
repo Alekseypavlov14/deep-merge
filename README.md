@@ -40,6 +40,8 @@ You can see that result type is different comparing to arguments. **You need to 
 - deepUpdate
 - deepMergeAndAssign
 - deepUpdateAndAssign
+- deepClone
+- deepCompare
 
 #### **deepMerge** - for merging with type changing without mutating
 Example:
@@ -149,3 +151,7 @@ deepUpdateAndAssign(user, updatedUserData)
 // user: User - type has not been changed
 // user is mutated!
 ```
+
+#### **deepClone** clones an object
+
+#### **deepCompare** compares objects (number of arguments in unlimited)
