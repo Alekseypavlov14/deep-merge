@@ -1,6 +1,4 @@
-import { Assignable } from "../types"
-
-export function deepCompareTwoAssignable(object1: Assignable, object2: Assignable) {
+export function deepCompareTwoAssignable(object1: any, object2: any) {
   // for primitives
   if (object1 === object2) return true
 

@@ -1,3 +1,7 @@
+### 1.2.1
+
+- **deepClone** and **deepCompare** takes any type of arguments instead of objects only
+
 ### 1.2.0
 
 - updated documentation

@@ -1,5 +1,12 @@
 import { deepClone } from "../utils/deepClone"
 
+test('should clone a primitive', () => {
+  const originalPrimitive = 0
+  const clonedPrimitive = deepClone(originalPrimitive)
+
+  expect(clonedPrimitive).toEqual(originalPrimitive)
+});
+
 test('should clone an empty object', () => {
   const originalObject = {}
   const clonedObject = deepClone(originalObject)

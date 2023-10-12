@@ -1,13 +1,13 @@
 import { Assignable } from "../types"
 
 // clones object
-export function deepClone<T extends Assignable>(object: T): T {
+export function deepClone<T>(object: T): T {
   // for primitives
   if (object === null || typeof object !== 'object') return object
 
   // for arrays
   if (Array.isArray(object)) {
-    return (object as T).map((item: T[number]) => deepClone(item))
+    return (object as Array<unknown>).map(item => deepClone(item)) as T
   }
 
   // for objects
