@@ -1,3 +1,7 @@
+### 1.2.2 
+
+- fixed bug in **deepCompare** (compares with null)
+
 ### 1.2.1
 
 - **deepClone** and **deepCompare** takes any type of arguments instead of objects only

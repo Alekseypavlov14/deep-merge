@@ -81,3 +81,13 @@ test('Comparing objects with the same reference', () => {
 
   expect(deepCompare(object1, object2)).toBe(true)
 })
+
+// Test case 10: Comparing with null
+test('Comparing objects with the same reference', () => {
+  const objectNull = null
+  const object1 = { a: 0 }
+  const object2 = null
+
+  expect(deepCompare(objectNull, object1)).toBe(false)
+  expect(deepCompare(objectNull, object2)).toBe(true)
+})
